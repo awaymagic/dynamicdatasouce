@@ -25,6 +25,7 @@ public class FriendImplService implements FriendService {
 
     @Override
     @DS("master")
+    // 推荐将 @DS 注解放在 Mapper 上
     public void save(Friend friend) {
         friendMapper.save(friend);
     }

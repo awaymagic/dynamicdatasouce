@@ -27,6 +27,7 @@ public class RMyBatisConfig {
         return DruidDataSourceBuilder.create().build();
     }
 
+    // 自己注册一个mybatis的DataSourceTransactionManager
     @Bean
     @Primary
     public SqlSessionFactory rSqlSessionFactory()
